@@ -1,0 +1,72 @@
+.cabecalho {
+  height: 250px;
+  padding: 5em 20%;
+  text-align: center;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.nav h1, .nav a {
+  color: var(--cor-branco);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.buscar {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: var(--cor-branco);
+  display: flex;
+  padding: 1em;
+  width: calc(100% - 2em);
+}
+
+.buscar__input {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.buscar__input::placeholder {
+  color: inherit;
+  font-family: var(--fonte-buscar);
+  font-size: inherit;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.buscar__input:focus {
+  outline: none;
+}
+
+
+/* Responsivo */
+@media screen and (max-width: 720px) {
+  .cabecalho {
+    height: auto;
+    padding: 2rem 1rem 3rem 1rem;
+    text-align: center;
+  }
+
+  .nav h1, .nav a {
+    font-size: 18px;
+  }
+
+  .buscar {
+    padding: 0.3em;
+    width: calc(100% - 0.6em);
+  }
+  
+  .buscar__input {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+
+
+:root {
+  --cor-branco: #ffffff;
+  --cor-cinza: #717171;
+  --cor-fundo: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+  --cor-fundo-principal: #f3f5f7;
+  --cor-like: #574AE8;
+  --cor-post-titulo: #1A202C;
+  --fonte-buscar: 'Inter';
+  --fonte-main: 'Lexend Deca';
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor-fundo-principal);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: var(--fonte-main);
+  font-weight: 400;
+  width: auto;
+}
+
+header {
+  background: var(--cor-fundo);
+}
